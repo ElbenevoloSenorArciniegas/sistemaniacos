@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Sistemaniacos</title>
+	</head>
+	<body style="background-color: #eee">
+		<canvas id="canvas" style="border-width: 5px;
+			border-style: outset;
+			border-color: #666;"></canvas>
+	</body>
+
+<script type="text/javascript">
+
+function dibujar_Personaje () {
+	ENV.ctx.drawImage(
+		PERSONAJE,
+		PER_X*PER_W,
+		PER_Y*PER_H,
+		PER_W,
+		PER_H,
+		W/2/SCALE-PER_W/SCALE-8,
+		H/2/SCALE-PER_H/2/SCALE,
+		PER_W,
+		PER_H
+		);
+}
+
+</script>
+<script type="text/javascript" src="js/Entorno.js"></script>
+<script type="text/javascript" src="js/Obj.js"></script>
+<script type="text/javascript" src="js/Persona.js"></script>
+<script type="text/javascript" src="js/enviroment.js"></script>
+</html>
